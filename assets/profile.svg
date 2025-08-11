@@ -1,0 +1,210 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screen-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="code-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="180" fill="url(#bg-gradient)" opacity="0.1"/>
+  
+  <!-- Laptop Base -->
+  <rect x="80" y="240" width="240" height="120" rx="8" fill="#e5e7eb"/>
+  <rect x="85" y="245" width="230" height="110" rx="6" fill="#f3f4f6"/>
+  
+  <!-- Laptop Screen -->
+  <rect x="100" y="120" width="200" height="130" rx="8" fill="#1f2937"/>
+  <rect x="105" y="125" width="190" height="120" rx="4" fill="url(#screen-gradient)"/>
+  
+  <!-- Code Lines -->
+  <rect x="115" y="140" width="60" height="3" rx="1.5" fill="url(#code-gradient)"/>
+  <rect x="115" y="150" width="80" height="3" rx="1.5" fill="#3b82f6"/>
+  <rect x="115" y="160" width="45" height="3" rx="1.5" fill="#f59e0b"/>
+  <rect x="115" y="170" width="100" height="3" rx="1.5" fill="#10b981"/>
+  <rect x="115" y="180" width="70" height="3" rx="1.5" fill="#8b5cf6"/>
+  <rect x="115" y="190" width="90" height="3" rx="1.5" fill="#ef4444"/>
+  <rect x="115" y="200" width="55" height="3" rx="1.5" fill="#06b6d4"/>
+  <rect x="115" y="210" width="85" height="3" rx="1.5" fill="#84cc16"/>
+  
+  <!-- Keyboard -->
+  <rect x="90" y="260" width="220" height="80" rx="4" fill="#d1d5db"/>
+  
+  <!-- Keyboard Keys -->
+  <g fill="#9ca3af">
+    <rect x="95" y="265" width="8" height="8" rx="1"/>
+    <rect x="106" y="265" width="8" height="8" rx="1"/>
+    <rect x="117" y="265" width="8" height="8" rx="1"/>
+    <rect x="128" y="265" width="8" height="8" rx="1"/>
+    <rect x="139" y="265" width="8" height="8" rx="1"/>
+    <rect x="150" y="265" width="8" height="8" rx="1"/>
+    <rect x="161" y="265" width="8" height="8" rx="1"/>
+    <rect x="172" y="265" width="8" height="8" rx="1"/>
+    <rect x="183" y="265" width="8" height="8" rx="1"/>
+    <rect x="194" y="265" width="8" height="8" rx="1"/>
+    <rect x="205" y="265" width="8" height="8" rx="1"/>
+    <rect x="216" y="265" width="8" height="8" rx="1"/>
+    <rect x="227" y="265" width="8" height="8" rx="1"/>
+    <rect x="238" y="265" width="8" height="8" rx="1"/>
+    <rect x="249" y="265" width="8" height="8" rx="1"/>
+    <rect x="260" y="265" width="8" height="8" rx="1"/>
+    <rect x="271" y="265" width="8" height="8" rx="1"/>
+    <rect x="282" y="265" width="8" height="8" rx="1"/>
+    <rect x="293" y="265" width="8" height="8" rx="1"/>
+    <rect x="304" y="265" width="8" height="8" rx="1"/>
+    
+    <rect x="95" y="276" width="12" height="8" rx="1"/>
+    <rect x="110" y="276" width="8" height="8" rx="1"/>
+    <rect x="121" y="276" width="8" height="8" rx="1"/>
+    <rect x="132" y="276" width="8" height="8" rx="1"/>
+    <rect x="143" y="276" width="8" height="8" rx="1"/>
+    <rect x="154" y="276" width="8" height="8" rx="1"/>
+    <rect x="165" y="276" width="8" height="8" rx="1"/>
+    <rect x="176" y="276" width="8" height="8" rx="1"/>
+    <rect x="187" y="276" width="8" height="8" rx="1"/>
+    <rect x="198" y="276" width="8" height="8" rx="1"/>
+    <rect x="209" y="276" width="8" height="8" rx="1"/>
+    <rect x="220" y="276" width="8" height="8" rx="1"/>
+    <rect x="231" y="276" width="8" height="8" rx="1"/>
+    <rect x="242" y="276" width="8" height="8" rx="1"/>
+    <rect x="253" y="276" width="8" height="8" rx="1"/>
+    <rect x="264" y="276" width="8" height="8" rx="1"/>
+    <rect x="275" y="276" width="8" height="8" rx="1"/>
+    <rect x="286" y="276" width="8" height="8" rx="1"/>
+    <rect x="297" y="276" width="15" height="8" rx="1"/>
+    
+    <rect x="95" y="287" width="15" height="8" rx="1"/>
+    <rect x="113" y="287" width="8" height="8" rx="1"/>
+    <rect x="124" y="287" width="8" height="8" rx="1"/>
+    <rect x="135" y="287" width="8" height="8" rx="1"/>
+    <rect x="146" y="287" width="8" height="8" rx="1"/>
+    <rect x="157" y="287" width="8" height="8" rx="1"/>
+    <rect x="168" y="287" width="8" height="8" rx="1"/>
+    <rect x="179" y="287" width="8" height="8" rx="1"/>
+    <rect x="190" y="287" width="8" height="8" rx="1"/>
+    <rect x="201" y="287" width="8" height="8" rx="1"/>
+    <rect x="212" y="287" width="8" height="8" rx="1"/>
+    <rect x="223" y="287" width="8" height="8" rx="1"/>
+    <rect x="234" y="287" width="8" height="8" rx="1"/>
+    <rect x="245" y="287" width="8" height="8" rx="1"/>
+    <rect x="256" y="287" width="8" height="8" rx="1"/>
+    <rect x="267" y="287" width="8" height="8" rx="1"/>
+    <rect x="278" y="287" width="8" height="8" rx="1"/>
+    <rect x="289" y="287" width="23" height="8" rx="1"/>
+    
+    <rect x="95" y="298" width="18" height="8" rx="1"/>
+    <rect x="116" y="298" width="8" height="8" rx="1"/>
+    <rect x="127" y="298" width="8" height="8" rx="1"/>
+    <rect x="138" y="298" width="8" height="8" rx="1"/>
+    <rect x="149" y="298" width="8" height="8" rx="1"/>
+    <rect x="160" y="298" width="8" height="8" rx="1"/>
+    <rect x="171" y="298" width="8" height="8" rx="1"/>
+    <rect x="182" y="298" width="8" height="8" rx="1"/>
+    <rect x="193" y="298" width="8" height="8" rx="1"/>
+    <rect x="204" y="298" width="8" height="8" rx="1"/>
+    <rect x="215" y="298" width="8" height="8" rx="1"/>
+    <rect x="226" y="298" width="8" height="8" rx="1"/>
+    <rect x="237" y="298" width="8" height="8" rx="1"/>
+    <rect x="248" y="298" width="8" height="8" rx="1"/>
+    <rect x="259" y="298" width="8" height="8" rx="1"/>
+    <rect x="270" y="298" width="8" height="8" rx="1"/>
+    <rect x="281" y="298" width="8" height="8" rx="1"/>
+    <rect x="292" y="298" width="20" height="8" rx="1"/>
+    
+    <rect x="95" y="309" width="20" height="8" rx="1"/>
+    <rect x="118" y="309" width="8" height="8" rx="1"/>
+    <rect x="129" y="309" width="8" height="8" rx="1"/>
+    <rect x="140" y="309" width="8" height="8" rx="1"/>
+    <rect x="151" y="309" width="8" height="8" rx="1"/>
+    <rect x="162" y="309" width="8" height="8" rx="1"/>
+    <rect x="173" y="309" width="8" height="8" rx="1"/>
+    <rect x="184" y="309" width="8" height="8" rx="1"/>
+    <rect x="195" y="309" width="8" height="8" rx="1"/>
+    <rect x="206" y="309" width="8" height="8" rx="1"/>
+    <rect x="217" y="309" width="8" height="8" rx="1"/>
+    <rect x="228" y="309" width="8" height="8" rx="1"/>
+    <rect x="239" y="309" width="8" height="8" rx="1"/>
+    <rect x="250" y="309" width="8" height="8" rx="1"/>
+    <rect x="261" y="309" width="8" height="8" rx="1"/>
+    <rect x="272" y="309" width="8" height="8" rx="1"/>
+    <rect x="283" y="309" width="8" height="8" rx="1"/>
+    <rect x="294" y="309" width="18" height="8" rx="1"/>
+    
+    <rect x="95" y="320" width="12" height="8" rx="1"/>
+    <rect x="110" y="320" width="12" height="8" rx="1"/>
+    <rect x="125" y="320" width="12" height="8" rx="1"/>
+    <rect x="140" y="320" width="80" height="8" rx="1"/>
+    <rect x="223" y="320" width="12" height="8" rx="1"/>
+    <rect x="238" y="320" width="12" height="8" rx="1"/>
+    <rect x="253" y="320" width="12" height="8" rx="1"/>
+    <rect x="268" y="320" width="12" height="8" rx="1"/>
+    <rect x="283" y="320" width="12" height="8" rx="1"/>
+    <rect x="298" y="320" width="14" height="8" rx="1"/>
+  </g>
+  
+  <!-- Trackpad -->
+  <rect x="160" y="290" width="80" height="40" rx="4" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  
+  <!-- Floating Elements -->
+  <g opacity="0.8">
+    <!-- HTML Tag -->
+    <rect x="320" y="80" width="60" height="25" rx="4" fill="#e11d48" opacity="0.9"/>
+    <text x="350" y="97" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">HTML</text>
+    
+    <!-- CSS Tag -->
+    <rect x="330" y="160" width="50" height="25" rx="4" fill="#2563eb" opacity="0.9"/>
+    <text x="355" y="177" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">CSS</text>
+    
+    <!-- JS Tag -->
+    <rect x="25" y="100" width="45" height="25" rx="4" fill="#f59e0b" opacity="0.9"/>
+    <text x="47.5" y="117" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">JS</text>
+    
+    <!-- AI Tag -->
+    <rect x="15" y="180" width="40" height="25" rx="4" fill="#8b5cf6" opacity="0.9"/>
+    <text x="35" y="197" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">AI</text>
+  </g>
+  
+  <!-- Decorative Dots -->
+  <circle cx="350" y="300" r="3" fill="#10b981" opacity="0.6"/>
+  <circle cx="370" y="280" r="2" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="30" y="280" r="4" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="50" y="300" r="2" fill="#ef4444" opacity="0.6"/>
+  <circle cx="365" y="320" r="2" fill="#8b5cf6" opacity="0.6"/>
+  <circle cx="25" y="320" r="3" fill="#06b6d4" opacity="0.6"/>
+  
+  <!-- Terminal Window -->
+  <rect x="320" y="200" width="70" height="45" rx="4" fill="#1f2937" opacity="0.9"/>
+  <rect x="325" y="205" width="60" height="35" rx="2" fill="#111827"/>
+  <rect x="330" y="210" width="3" height="25" fill="#10b981"/>
+  <text x="336" y="218" fill="#10b981" font-family="monospace" font-size="6">$</text>
+  <text x="341" y="218" fill="#f3f4f6" font-family="monospace" font-size="6">npm start</text>
+  <text x="336" y="226" fill="#10b981" font-family="monospace" font-size="6">$</text>
+  <text x="341" y="226" fill="#f3f4f6" font-family="monospace" font-size="6">git push</text>
+  <text x="336" y="234" fill="#10b981" font-family="monospace" font-size="6">$</text>
+  
+  <!-- Browser Window -->
+  <rect x="10" y="50" width="80" height="50" rx="4" fill="#f9fafb" stroke="#d1d5db" stroke-width="1" opacity="0.9"/>
+  <rect x="15" y="55" width="70" height="8" rx="2" fill="#e5e7eb"/>
+  <circle cx="20" r="2" cy="59" fill="#ef4444"/>
+  <circle cx="27" r="2" cy="59" fill="#f59e0b"/>
+  <circle cx="34" r="2" cy="59" fill="#10b981"/>
+  <rect x="15" y="68" width="70" height="27" rx="2" fill="white"/>
+  <rect x="20" y="73" width="20" height="3" rx="1" fill="#3b82f6"/>
+  <rect x="20" y="79" width="35" height="3" rx="1" fill="#6b7280"/>
+  <rect x="20" y="85" width="25" height="3" rx="1" fill="#6b7280"/>
+  
+  <!-- Animated Elements (represented as static for SVG) -->
+  <g opacity="0.3">
+    <circle cx="200" cy="50" r="8" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="200" cy="50" r="15" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.5"/>
+    <circle cx="200" cy="50" r="22" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.25"/>
+  </g>
+</svg>
