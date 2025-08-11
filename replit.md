@@ -7,6 +7,7 @@ This is a personal portfolio website for a software developer specializing in AI
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preference: Modern, attractive, and smooth UI with enhanced animations and visual appeal.
 
 ## System Architecture
 

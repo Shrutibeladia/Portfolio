@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initSmoothScrolling();
     initScrollIndicator();
+    initHeroAnimations();
+    initFloatingShapes();
+    initCodeTypewriter();
 });
 
 // Navigation functionality
@@ -294,11 +297,9 @@ function initScrollIndicator() {
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.classList.remove('scrolled');
     }
 });
 
@@ -416,3 +417,232 @@ if ('performance' in window) {
         }, 0);
     });
 }
+
+// Hero animations
+function initHeroAnimations() {
+    const heroStats = document.querySelectorAll('.stat-number');
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const finalValue = target.textContent;
+                const numericValue = parseInt(finalValue);
+                
+                if (!isNaN(numericValue)) {
+                    animateNumber(target, 0, numericValue, 2000);
+                }
+                observer.unobserve(target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    heroStats.forEach(stat => {
+        observer.observe(stat);
+    });
+}
+
+// Animate numbers
+function animateNumber(element, start, end, duration) {
+    const range = end - start;
+    let current = start;
+    const increment = range / (duration / 16);
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= end) {
+            current = end;
+            clearInterval(timer);
+        }
+        element.textContent = Math.floor(current) + '+';
+    }, 16);
+}
+
+// Floating shapes animation
+function initFloatingShapes() {
+    const shapes = document.querySelectorAll('.shape');
+    
+    shapes.forEach((shape, index) => {
+        // Add random animation delay
+        shape.style.animationDelay = `${Math.random() * 2}s`;
+        
+        // Add mouse interaction
+        shape.addEventListener('mouseenter', function() {
+            this.style.animationPlayState = 'paused';
+            this.style.transform = 'scale(1.2)';
+        });
+        
+        shape.addEventListener('mouseleave', function() {
+            this.style.animationPlayState = 'running';
+            this.style.transform = 'scale(1)';
+        });
+    });
+}
+
+// Code typewriter effect
+function initCodeTypewriter() {
+    const codeLines = document.querySelectorAll('.code-line');
+    let delay = 0;
+    
+    codeLines.forEach((line, index) => {
+        setTimeout(() => {
+            line.style.opacity = '0';
+            line.style.transform = 'translateX(-20px)';
+            line.style.transition = 'all 0.5s ease';
+            
+            setTimeout(() => {
+                line.style.opacity = '1';
+                line.style.transform = 'translateX(0)';
+            }, 100);
+        }, delay);
+        
+        delay += 300;
+    });
+}
+
+// Floating tech icons animation
+function initFloatingTechIcons() {
+    const techIcons = document.querySelectorAll('.tech-icon');
+    
+    techIcons.forEach((icon, index) => {
+        // Random floating animation
+        const randomDelay = Math.random() * 2000;
+        const randomDuration = 3000 + Math.random() * 2000;
+        
+        icon.style.animation = `floatIcon ${randomDuration}ms ease-in-out infinite`;
+        icon.style.animationDelay = `${randomDelay}ms`;
+        
+        // Hover effects
+        icon.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px) scale(1.1)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        
+        icon.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+}
+
+// Enhanced scroll animations
+function initEnhancedScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                
+                // Add stagger animation for child elements
+                const children = entry.target.querySelectorAll('.stagger-item');
+                children.forEach((child, index) => {
+                    setTimeout(() => {
+                        child.classList.add('visible');
+                    }, index * 100);
+                });
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements for animation
+    const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+}
+
+// Parallax scroll effect
+function initParallaxScroll() {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * -0.5;
+        
+        const heroBackground = document.querySelector('.hero-background');
+        if (heroBackground) {
+            heroBackground.style.transform = `translateY(${rate}px)`;
+        }
+        
+        // Parallax for floating shapes
+        const shapes = document.querySelectorAll('.shape');
+        shapes.forEach((shape, index) => {
+            const speed = 0.5 + (index * 0.1);
+            const yPos = -(scrolled * speed);
+            shape.style.transform = `translateY(${yPos}px)`;
+        });
+    });
+}
+
+// Smooth hover effects for buttons
+function initButtonEffects() {
+    const buttons = document.querySelectorAll('.btn');
+    
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px)';
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+        
+        // Ripple effect on click
+        button.addEventListener('click', function(e) {
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            ripple.style.cssText = `
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                transform: scale(0);
+                animation: ripple 0.6s linear;
+                width: ${size}px;
+                height: ${size}px;
+                left: ${x}px;
+                top: ${y}px;
+                pointer-events: none;
+            `;
+            
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+}
+
+// Loading screen
+function initLoadingScreen() {
+    window.addEventListener('load', function() {
+        setTimeout(() => {
+            document.body.classList.add('loaded');
+        }, 1000);
+    });
+}
+
+// Initialize all enhanced features
+document.addEventListener('DOMContentLoaded', function() {
+    initFloatingTechIcons();
+    initEnhancedScrollAnimations();
+    initParallaxScroll();
+    initButtonEffects();
+    initLoadingScreen();
+});
+
+// CSS for ripple animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
