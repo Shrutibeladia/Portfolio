@@ -1,806 +1,931 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Developer Portfolio | AI & Web Development</title>
-    <meta name="description" content="Portfolio showcasing software development skills, AI automation expertise, and innovative projects by a passionate developer.">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Portfolio</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Software Developer Portfolio | AI & Web Development</title>
+        <meta
+            name="description"
+            content="Portfolio showcasing software development skills, AI automation expertise, and innovative projects by a passionate developer."
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">Portfolio</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#ai-automation" class="nav-link">AI Automation</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#ai-automation" class="nav-link">AI Automation</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-                <div class="shape shape-5"></div>
-            </div>
-        </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-icon">✨</span>
-                    <span>Available for New Opportunities</span>
-                </div>
-                <h1 class="hero-title">
-                    <span class="greeting">Hi, I'm a</span>
-                    <span class="name gradient-text">Software Developer</span>
-                    <span class="title-highlight">Building the Future with Code & AI</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Fresh graduate specializing in full-stack development and AI automation. 
-                    Turning ideas into elegant digital solutions with modern technologies.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">4+</div>
-                        <div class="stat-label">Months Experience</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Projects Built</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">AI Tools Mastered</div>
-                    </div>
-                </div>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>Explore My Work</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <span>Let's Connect</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </a>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-controls">
-                            <span class="control close"></span>
-                            <span class="control minimize"></span>
-                            <span class="control maximize"></span>
-                        </div>
-                        <div class="window-title">portfolio.js</div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-icon">✨</span>
+                        <span>Available for New Opportunities</span>
                     </div>
-                    <div class="code-content">
-                        <div class="code-line">
-                            <span class="line-number">1</span>
-                            <span class="code-text">
-                                <span class="keyword">const</span> 
-                                <span class="variable">developer</span> = {
-                            </span>
-                        </div>
-                        <div class="code-line">
-                            <span class="line-number">2</span>
-                            <span class="code-text">
-                                &nbsp;&nbsp;<span class="property">name</span>: 
-                                <span class="string">'Software Developer'</span>,
-                            </span>
-                        </div>
-                        <div class="code-line">
-                            <span class="line-number">3</span>
-                            <span class="code-text">
-                                &nbsp;&nbsp;<span class="property">skills</span>: [
-                                <span class="string">'React'</span>, 
-                                <span class="string">'Node.js'</span>],
-                            </span>
-                        </div>
-                        <div class="code-line">
-                            <span class="line-number">4</span>
-                            <span class="code-text">
-                                &nbsp;&nbsp;<span class="property">passion</span>: 
-                                <span class="string">'AI Automation'</span>,
-                            </span>
-                        </div>
-                        <div class="code-line">
-                            <span class="line-number">5</span>
-                            <span class="code-text">
-                                &nbsp;&nbsp;<span class="property">status</span>: 
-                                <span class="string">'Available'</span>
-                            </span>
-                        </div>
-                        <div class="code-line">
-                            <span class="line-number">6</span>
-                            <span class="code-text">};</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="floating-icons">
-                    <div class="tech-icon react"><i class="fab fa-react"></i></div>
-                    <div class="tech-icon js"><i class="fab fa-js-square"></i></div>
-                    <div class="tech-icon node"><i class="fab fa-node-js"></i></div>
-                    <div class="tech-icon python"><i class="fab fa-python"></i></div>
-                    <div class="tech-icon ai">🤖</div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-text">Scroll to explore</div>
-            <div class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        I'm a passionate software developer with a strong foundation in modern web technologies and AI automation tools. 
-                        As a recent graduate entering the tech industry, I bring fresh perspectives and enthusiasm for creating 
-                        innovative digital solutions.
+                    <h1 class="hero-title">
+                        <span class="greeting"
+                            >Hi, I'm <b>Shruti Beladia</b></span
+                        >
+                        <span class="name gradient-text"
+                            >Software Developer</span
+                        >
+                        <span class="title-highlight"
+                            >Building the Future with Code & AI</span
+                        >
+                    </h1>
+                    <p class="hero-subtitle">
+                        Graduated software developer specializing in full-stack
+                        development and AI automation. Turning ideas into
+                        elegant digital solutions using modern technologies.
                     </p>
-                    <p>
-                        My journey in software development has been driven by curiosity and a desire to solve real-world problems 
-                        through technology. I've gained hands-on experience through internships and personal projects, focusing on 
-                        full-stack development and AI integration.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Fresh Graduate in Computer Science</span>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Months Experience</div>
                         </div>
-                        <div class="highlight">
-                            <i class="fas fa-code"></i>
-                            <span>Full-Stack Development Experience</span>
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects Built</div>
                         </div>
-                        <div class="highlight">
-                            <i class="fas fa-robot"></i>
-                            <span>AI Automation Enthusiast</span>
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">AI Tools Mastered</div>
                         </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Connect</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <div class="window-title">portfolio.js</div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-text">
+                                    <span class="keyword">const</span>
+                                    <span class="variable">developer</span> = {
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property"
+                                        >name</span
+                                    >:
+                                    <span class="string"
+                                        >'Software Developer'</span
+                                    >,
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property"
+                                        >skills</span
+                                    >: [ <span class="string">'React'</span>,
+                                    <span class="string">'Node.js'</span>],
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property"
+                                        >passion</span
+                                    >:
+                                    <span class="string">'AI Automation'</span>,
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property"
+                                        >status</span
+                                    >:
+                                    <span class="string">'Available'</span>
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                <span class="code-text">};</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="tech-icon react">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-icon js">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="tech-icon node">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech-icon python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-icon ai">🤖</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll to explore</div>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024 - Present</div>
-                        <h3>Full-Time Software Developer</h3>
-                        <h4>Tech Solutions Company</h4>
-                        <p>
-                            Contributed to full-stack web application development using modern JavaScript frameworks. 
-                            Collaborated with senior developers on feature implementation and bug fixes. Gained experience 
-                            in agile development methodologies and version control systems.
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            Software Engineer with hands-on experience in
+                            designing and deploying full-stack applications
+                            using C#, ASP.NET Core, Angular, React.js, and SQL
+                            Server. Adept at building scalable, user-friendly
+                            solutions that improve efficiency and engagement.
+                            Collaborative team player in Agile environments with
+                            a track record of delivering high-quality code and
+                            continuously expanding technical expertise
                         </p>
-                        <div class="timeline-tech">
-                            <span>JavaScript</span>
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024</div>
-                        <h3>Software Development Intern</h3>
-                        <h4>Startup Incubator</h4>
                         <p>
-                            Developed responsive web interfaces and implemented RESTful APIs. Participated in code reviews 
-                            and learned industry best practices. Worked on automation scripts to improve development workflow.
+                            My journey in software development has been driven
+                            by curiosity and a desire to solve real-world
+                            problems through technology. I've gained hands-on
+                            experience through internships and personal
+                            projects, focusing on full-stack development and AI
+                            integration.
                         </p>
-                        <div class="timeline-tech">
-                            <span>HTML/CSS</span>
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>Git</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023</div>
-                        <h3>Freelance Projects</h3>
-                        <h4>Various Clients</h4>
-                        <p>
-                            Built custom websites and web applications for small businesses. Gained experience in client 
-                            communication, project management, and delivering solutions that meet specific requirements.
-                        </p>
-                        <div class="timeline-tech">
-                            <span>WordPress</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>jQuery</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-intro">
-                <p>A showcase of my recent work demonstrating expertise in full-stack development and AI integration</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="#" class="action-btn" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="action-btn" title="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span
+                                    >Graduated in Computer Science (2024)</span
+                                >
                             </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge completed">Completed</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>E-Commerce Platform</h3>
-                            <div class="project-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <p>A full-stack e-commerce solution with user authentication, product management, payment integration, and real-time inventory tracking.</p>
-                        <div class="project-features">
-                            <span class="feature">Payment Gateway</span>
-                            <span class="feature">User Auth</span>
-                            <span class="feature">Admin Panel</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag react">React</span>
-                            <span class="tech-tag node">Node.js</span>
-                            <span class="tech-tag mongo">MongoDB</span>
-                            <span class="tech-tag stripe">Stripe</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="#" class="action-btn" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="action-btn" title="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge completed">Completed</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Task Management App</h3>
-                            <div class="project-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <p>A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking.</p>
-                        <div class="project-features">
-                            <span class="feature">Real-time Updates</span>
-                            <span class="feature">Team Collaboration</span>
-                            <span class="feature">Analytics</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag vue">Vue.js</span>
-                            <span class="tech-tag express">Express</span>
-                            <span class="tech-tag socket">Socket.io</span>
-                            <span class="tech-tag postgres">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="#" class="action-btn" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="action-btn" title="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge completed">Completed</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Data Visualization Dashboard</h3>
-                            <div class="project-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                        </div>
-                        <p>Interactive dashboard for data analysis with dynamic charts, real-time data processing, and advanced filtering capabilities.</p>
-                        <div class="project-features">
-                            <span class="feature">Interactive Charts</span>
-                            <span class="feature">Real-time Data</span>
-                            <span class="feature">Export Options</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag d3">D3.js</span>
-                            <span class="tech-tag python">Python</span>
-                            <span class="tech-tag flask">Flask</span>
-                            <span class="tech-tag chart">Chart.js</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="#" class="action-btn" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="action-btn" title="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge in-progress">In Progress</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>AI Chatbot Assistant</h3>
-                            <div class="project-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <p>Intelligent chatbot with natural language processing capabilities for customer service automation and smart responses.</p>
-                        <div class="project-features">
-                            <span class="feature">NLP Processing</span>
-                            <span class="feature">Context Awareness</span>
-                            <span class="feature">Multi-language</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag python">Python</span>
-                            <span class="tech-tag tf">TensorFlow</span>
-                            <span class="tech-tag fastapi">FastAPI</span>
-                            <span class="tech-tag openai">OpenAI</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-intro">
-                <p>A comprehensive toolkit of modern technologies and frameworks I use to build exceptional digital experiences</p>
-            </div>
-            
-            <div class="skills-showcase">
-                <div class="skill-category fade-in">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Frontend Development</h3>
-                        <p>Creating beautiful, responsive user interfaces</p>
-                    </div>
-                    <div class="skills-cloud">
-                        <div class="skill-bubble" data-level="90">
-                            <div class="skill-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <span class="skill-name">HTML5</span>
-                            <div class="skill-level">90%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="90">
-                            <div class="skill-icon">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                            <span class="skill-name">CSS3</span>
-                            <div class="skill-level">90%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="85">
-                            <div class="skill-icon">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-level">85%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="80">
-                            <div class="skill-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <span class="skill-name">React</span>
-                            <div class="skill-level">80%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="75">
-                            <div class="skill-icon">
-                                <i class="fab fa-vuejs"></i>
-                            </div>
-                            <span class="skill-name">Vue.js</span>
-                            <div class="skill-level">75%</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category fade-in">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Backend Development</h3>
-                        <p>Building robust server-side solutions</p>
-                    </div>
-                    <div class="skills-cloud">
-                        <div class="skill-bubble" data-level="85">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <span class="skill-name">Python</span>
-                            <div class="skill-level">85%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="80">
-                            <div class="skill-icon">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <span class="skill-name">Node.js</span>
-                            <div class="skill-level">80%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="75">
-                            <div class="skill-icon">
+                            <div class="highlight">
                                 <i class="fas fa-code"></i>
+                                <span>Full-Stack Development Experience</span>
                             </div>
-                            <span class="skill-name">Express.js</span>
-                            <div class="skill-level">75%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="80">
-                            <div class="skill-icon">
-                                <i class="fas fa-exchange-alt"></i>
+                            <div class="highlight">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Automation Enthusiast</span>
                             </div>
-                            <span class="skill-name">REST APIs</span>
-                            <div class="skill-level">80%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="70">
-                            <div class="skill-icon">
-                                <i class="fas fa-fire"></i>
-                            </div>
-                            <span class="skill-name">FastAPI</span>
-                            <div class="skill-level">70%</div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="skill-category fade-in">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3>Database & Tools</h3>
-                        <p>Managing data and development workflows</p>
-                    </div>
-                    <div class="skills-cloud">
-                        <div class="skill-bubble" data-level="75">
-                            <div class="skill-icon">
-                                <i class="fas fa-leaf"></i>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">
+                                March 2025 - July 2025
                             </div>
-                            <span class="skill-name">MongoDB</span>
-                            <div class="skill-level">75%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="70">
-                            <div class="skill-icon">
-                                <i class="fas fa-elephant"></i>
+                            <h3>(Full-Time) Associate Software Developer</h3>
+                            <h4>Mphasis</h4>
+                            <p>
+                                Learned C# and core .NET technologies -
+                                including ASP.NET Core and MVC - by completing
+                                8+ hands-on training modules focused on
+                                real-world application development, increasing
+                                production readiness and technical depth. •
+                                Developed and implemented robust form validation
+                                and secure data handling, reducing user input
+                                errors by 25%. • Collaborated within Agile
+                                teams, performing code reviews and debugging to
+                                improve code quality and reduce production bugs
+                                by 15%. • Utilized Git for version control,
+                                streamlining collaboration across
+                                multi-developer projects.
+                            </p>
+                            <div class="timeline-tech">
+                                <span>HTML, CSS & JavaScript</span>
+                                <span>C#</span>
+                                <span>Angular</span>
+                                <span>.Net</span>
+                                <span>SQLServer</span>
+                                <span>Git</span>
                             </div>
-                            <span class="skill-name">PostgreSQL</span>
-                            <div class="skill-level">70%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="85">
-                            <div class="skill-icon">
-                                <i class="fab fa-git-alt"></i>
-                            </div>
-                            <span class="skill-name">Git</span>
-                            <div class="skill-level">85%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="60">
-                            <div class="skill-icon">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <span class="skill-name">Docker</span>
-                            <div class="skill-level">60%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="75">
-                            <div class="skill-icon">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <span class="skill-name">AWS</span>
-                            <div class="skill-level">75%</div>
                         </div>
                     </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">
+                                January 2024 - May 2024
+                            </div>
+                            <h3>Frontend Development Intern</h3>
+                            <h4>Next Generation Technologies</h4>
+                            <p>
+                                Built a responsive e-commerce platform in
+                                React.js with 100+ products, increasing mobile
+                                conversion rates by 10%. • Applied responsive
+                                design principles, ensuring consistent UI/UX
+                                across devices and reducing page load time by
+                                20%. • Worked closely with clients to gather
+                                requirements and deliver tailored web solutions,
+                                improving customer satisfaction.
+                            </p>
+                            <div class="timeline-tech">
+                                <span>HTML/CSS</span>
+                                <span>Javascript</span>
+                                <span>React.js</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-intro">
+                    <p>
+                        A showcase of my recent work demonstrating expertise in
+                        full-stack development and AI integration
+                    </p>
                 </div>
-                
-                <div class="skill-category fade-in">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-robot"></i>
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a
+                                        href="#"
+                                        class="action-btn"
+                                        title="View Code"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="action-btn"
+                                        title="Live Demo"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-icon">
+                               <i class="fas fa-syringe"></i>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge completed"
+                                    >Completed</span
+                                >
+                            </div>
                         </div>
-                        <h3>AI & Machine Learning</h3>
-                        <p>Integrating intelligent features and automation</p>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Vaccine Management System</h3>
+                                <div class="project-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>
+                                Developed a role-based application with Admin and User panels to manage vaccine scheduling and inventory across 5+ cities. Enabled booking, rescheduling, and cancellation of appointments, reducing manual scheduling workload by 40%.Integrated secure CRUD operations with server-side validation to safeguard health data
+                            </p>
+                            <div class="project-features">
+                                <span class="feature">User Auth</span>
+                                <span class="feature">CRUD</span>
+                                <span class="feature">Admin Panel</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag react">Html</span>
+                                <span class="tech-tag node">Css</span>
+                                <span class="tech-tag mongo">Typescript</span>
+                                <span class="tech-tag stripe">Angular</span>
+                                <span class="tech-tag mongo">C#</span>
+                                <span class="tech-tag react">ASP.NET core</span>
+                                <span class="tech-tag stripe">SQL Server</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skills-cloud">
-                        <div class="skill-bubble" data-level="70">
-                            <div class="skill-icon">
-                                <i class="fas fa-brain"></i>
+
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a
+                                        href="#"
+                                        class="action-btn"
+                                        title="View Code"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="action-btn"
+                                        title="Live Demo"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <span class="skill-name">TensorFlow</span>
-                            <div class="skill-level">70%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="80">
-                            <div class="skill-icon">
-                                <i class="fas fa-comments"></i>
+                            <div class="project-icon">
+                                <i class="fas fa-hotel"></i>
                             </div>
-                            <span class="skill-name">OpenAI API</span>
-                            <div class="skill-level">80%</div>
+                            <div class="project-status">
+                                <span class="status-badge completed"
+                                    >Completed</span
+                                >
+                            </div>
                         </div>
-                        <div class="skill-bubble" data-level="65">
-                            <div class="skill-icon">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Staycation</h3>
+                                <div class="project-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>
+                               Designed and developed a hotel booking platform with smart search & filtering, enabling users to compare accommodations by price, location, and amenities.Created a 3-step booking flow, improving reservation completion rates and enhancing user experience.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature">Real-time Updates</span>
+                                <span class="feature">Bookings</span>
+                                <span class="feature">CRUD</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag mongo">MongoDB</span>
+                                <span class="tech-tag express">Express</span>
+                                <span class="tech-tag react">React</span>
+                                <span class="tech-tag node"
+                                    >Node.js</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a
+                                        href="#"
+                                        class="action-btn"
+                                        title="View Code"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="action-btn"
+                                        title="Live Demo"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-icon">
                                 <i class="fas fa-chart-line"></i>
                             </div>
-                            <span class="skill-name">scikit-learn</span>
-                            <div class="skill-level">65%</div>
-                        </div>
-                        <div class="skill-bubble" data-level="75">
-                            <div class="skill-icon">
-                                <i class="fas fa-table"></i>
+                            <div class="project-status">
+                                <span class="status-badge completed"
+                                    >Completed</span
+                                >
                             </div>
-                            <span class="skill-name">Pandas</span>
-                            <div class="skill-level">75%</div>
                         </div>
-                        <div class="skill-bubble" data-level="70">
-                            <div class="skill-icon">
-                                <i class="fas fa-language"></i>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Portfolio</h3>
+                                <div class="project-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
                             </div>
-                            <span class="skill-name">NLP</span>
-                            <div class="skill-level">70%</div>
+                            <p>
+                                Built and deployed a personal portfolio to showcase technical skills, projects, and professional background.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature">Showcase skills</span>
+                                <span class="feature">Showcase Projects</span>
+                                <!-- <span class="feature">Export Options</span> -->
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag html">Html</span>
+                                <span class="tech-tag css">Css</span>
+                                <span class="tech-tag JavaScript">JavaScript</span>
+                                <!-- <span class="tech-tag chart">Chart.js</span> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- AI Automation Section -->
-    <section id="ai-automation" class="ai-automation">
-        <div class="container">
-            <h2 class="section-title">AI Automation Expertise</h2>
-            <div class="ai-intro">
-                <p>Leveraging cutting-edge AI tools to streamline development processes and create intelligent solutions.</p>
-            </div>
-            <div class="ai-grid">
-                <div class="ai-card">
-                    <div class="ai-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Code Generation</h3>
-                    <p>Using AI assistants like GitHub Copilot and ChatGPT to accelerate development and improve code quality.</p>
-                    <div class="ai-tools">
-                        <span>GitHub Copilot</span>
-                        <span>ChatGPT</span>
-                        <span>Tabnine</span>
-                    </div>
-                </div>
-                
-                <div class="ai-card">
-                    <div class="ai-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <h3>Workflow Automation</h3>
-                    <p>Creating automated workflows for testing, deployment, and project management using AI-powered tools.</p>
-                    <div class="ai-tools">
-                        <span>GitHub Actions</span>
-                        <span>Zapier</span>
-                        <span>Make.com</span>
-                    </div>
-                </div>
-                
-                <div class="ai-card">
-                    <div class="ai-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Data Analysis</h3>
-                    <p>Implementing machine learning models for data insights and predictive analytics in applications.</p>
-                    <div class="ai-tools">
-                        <span>TensorFlow</span>
-                        <span>scikit-learn</span>
-                        <span>Pandas</span>
-                    </div>
-                </div>
-                
-                <div class="ai-card">
-                    <div class="ai-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>NLP Integration</h3>
-                    <p>Building chatbots and natural language processing features using modern AI APIs and frameworks.</p>
-                    <div class="ai-tools">
-                        <span>OpenAI API</span>
-                        <span>Hugging Face</span>
-                        <span>spaCy</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="ai-showcase">
-                <h3>AI-Powered Project Examples</h3>
-                <div class="showcase-grid">
-                    <div class="showcase-item">
-                        <h4>Automated Code Review Bot</h4>
-                        <p>Developed a GitHub bot that uses AI to analyze pull requests and provide code quality feedback.</p>
-                    </div>
-                    <div class="showcase-item">
-                        <h4>Smart Content Generator</h4>
-                        <p>Built a web application that generates marketing content using GPT models and custom prompts.</p>
-                    </div>
-                    <div class="showcase-item">
-                        <h4>Intelligent Data Pipeline</h4>
-                        <p>Created an automated data processing system with AI-driven anomaly detection and reporting.</p>
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a
+                                        href="#"
+                                        class="action-btn"
+                                        title="View Code"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="action-btn"
+                                        title="Live Demo"
+                                    >
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge in-progress"
+                                    >In Progress</span
+                                >
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>AI Chatbot Assistant</h3>
+                                <div class="project-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>
+                                Intelligent chatbot with natural language
+                                processing capabilities for customer service
+                                automation and smart responses.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature">NLP Processing</span>
+                                <span class="feature">Context Awareness</span>
+                                <span class="feature">Multi-language</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag python">Python</span>
+                                <span class="tech-tag tf">TensorFlow</span>
+                                <span class="tech-tag fastapi">FastAPI</span>
+                                <span class="tech-tag openai">OpenAI</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new opportunities, collaborating on projects, or just having a chat about technology and innovation.</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <span>Email</span>
-                                <a href="mailto:developer@email.com">developer@email.com</a>
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-intro">
+                    <p>
+                        A comprehensive toolkit of modern technologies and
+                        frameworks I use to build exceptional digital
+                        experiences
+                    </p>
+                </div>
+
+                <div class="skills-showcase">
+                    <div class="skill-category fade-in">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-laptop-code"></i>
                             </div>
+                            <h3>Frontend Development</h3>
+                            <p>
+                                Creating beautiful, responsive user interfaces
+                            </p>
                         </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <span>LinkedIn</span>
-                                <a href="#" target="_blank">linkedin.com/in/developer</a>
+                        <div class="skills-cloud">
+                            <div class="skill-bubble" data-level="90">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-level">90%</div>
                             </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <span>GitHub</span>
-                                <a href="#" target="_blank">github.com/developer</a>
+                            <div class="skill-bubble" data-level="90">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-level">90%</div>
                             </div>
+                            <div class="skill-bubble" data-level="85">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-level">85%</div>
+                            </div>
+                            <div class="skill-bubble" data-level="80">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span class="skill-name">React</span>
+                                <div class="skill-level">80%</div>
+                            </div>
+                            <!-- <div class="skill-bubble" data-level="75">
+                                <div class="skill-icon">
+                                    <i class="fab fa-vuejs"></i>
+                                </div>
+                                <span class="skill-name">Vue.js</span>
+                                <div class="skill-level">75%</div>
+                            </div> -->
                         </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <span>Phone</span>
-                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </div>
+
+                    <div class="skill-category fade-in">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend Development</h3>
+                            <p>Building robust server-side solutions</p>
+                        </div>
+                        <div class="skills-cloud">
+                            <div class="skill-bubble" data-level="85">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <div class="skill-level">85%</div>
+                            </div>
+                            <div class="skill-bubble" data-level="80">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-level">80%</div>
+                            </div>
+                            <div class="skill-bubble" data-level="75">
+                        <div class="skill-icon">
+                              <i class="fab fa-microsoft"></i>
+                                 </div>
+                                  <span class="skill-name">.NET</span>
+                                 <div class="skill-level">75%</div>
+                                  </div>
+                           <div class="skill-bubble" data-level="80">
+                           <div class="skill-icon">
+                           <i class="fas fa-code"></i>
+                         </div>
+                      <span class="skill-name">C#</span>
+                       <div class="skill-level">60%</div>
+                         </div>
+                            <div class="skill-bubble" data-level="70">
+                                <div class="skill-icon">
+                             <i class="fas fa-plug"></i>
+                                      </div>
+                             <span class="skill-name">REST API</span>
+                       <div class="skill-level">70%</div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="skill-category fade-in">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Database & Tools</h3>
+                            <p>Managing data and development workflows</p>
+                        </div>
+                        <div class="skills-cloud">
+                            <div class="skill-bubble" data-level="75">
+                                <div class="skill-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-level">75%</div>
+                            </div>
+                            <div class="skill-bubble" data-level="70">
+                       <div class="skill-icon">
+                     <i class="fas fa-database"></i>
+                      </div>
+                     <span class="skill-name">MS SQL Server</span>
+                 <div class="skill-level">70%</div>
+                                </div>
+                            <div class="skill-bubble" data-level="85">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <span class="skill-name">Git</span>
+                                <div class="skill-level">85%</div>
+                            </div>
+                            <!-- <div class="skill-bubble" data-level="60">
+                                <div class="skill-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-level">60%</div>
+                            </div> -->
+                            <div class="skill-bubble" data-level="75">
+                                <div class="skill-icon">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <span class="skill-name">AWS</span>
+                                <div class="skill-level">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!-- AI Automation Section -->
+        <section id="ai-automation" class="ai-automation">
+            <div class="container">
+                <h2 class="section-title">AI Automation Expertise</h2>
+                <div class="ai-intro">
+                    <p>
+                        Leveraging cutting-edge AI tools to streamline
+                        development processes and create intelligent solutions.
+                    </p>
                 </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <div class="ai-grid">
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <h3>Code Generation</h3>
+                        <p>
+                            Using AI assistants like GitHub Copilot and ChatGPT
+                            to accelerate development and improve code quality.
+                        </p>
+                        <div class="ai-tools">
+                            <span>GitHub Copilot</span>
+                            <span>ChatGPT</span>
+                            <span>Tabnine</span>
                         </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-tasks"></i>
                         </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <h3>Workflow Automation</h3>
+                        <p>
+                            Creating automated workflows for testing,
+                            deployment, and project management using AI-powered
+                            tools.
+                        </p>
+                        <div class="ai-tools">
+                            <span>GitHub Actions</span>
+                            <span>Zapier</span>
+                            <span>Make.com</span>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    </div>
+
+                    <!-- <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Data Analysis</h3>
+                        <p>
+                            Implementing machine learning models for data
+                            insights and predictive analytics in applications.
+                        </p>
+                        <div class="ai-tools">
+                            <span>TensorFlow</span>
+                            <span>scikit-learn</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div> -->
+
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Using Ai Agents</h3>
+                        <p>
+                            Utilizing AI agents to automate complex tasks, streamline workflows, and enhance productivity by handling processes that would otherwise require significant manual effort.
+                        </p>
+                        <div class="ai-tools">
+                            <span>Chatgpt Agents</span>
+                            <span>Promptable agents</span>
+                            <span>Zapier AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-showcase">
+                    <h3>AI-Powered Project Examples</h3>
+                    <div class="showcase-grid">
+                        <div class="showcase-item">
+                            <h4>Automated Code Review Bot</h4>
+                            <p>
+                                Developed a GitHub bot that uses AI to analyze
+                                pull requests and provide code quality feedback.
+                            </p>
+                        </div>
+                        <div class="showcase-item">
+                            <h4>Smart Content Generator</h4>
+                            <p>
+                                Built a web application that generates marketing
+                                content using GPT models and custom prompts.
+                            </p>
+                        </div>
+                        <div class="showcase-item">
+                            <h4>Intelligent Data Pipeline</h4>
+                            <p>
+                                Created an automated data processing system with
+                                AI-driven anomaly detection and reporting.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Software Developer Portfolio. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I'm always open to discussing new opportunities,
+                            collaborating on projects, or just having a chat
+                            about technology and innovation.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <a href="mailto:developer@email.com"
+                                        >shrutibeladia29@email.com</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <span>LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/shruti-beladia" target="_blank" 
+                                        >linkedin.com/in/shruti-beladia</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <span>GitHub</span>
+                                    <a href="https://github.com/Shrutibeladia" target="_blank"
+                                        >github.com/Shrutibeladia</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Phone</span>
+                                   <a href="tel:+919876543210">+91 9426042949</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Your Message"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="script.js"></script>
-</body>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>
+                        &copy; 2025  Shruti Beladia Portfolio. All rights
+                        reserved.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/Shrutibeladia" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shruti-beladia"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/ShrutiBeladia" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>

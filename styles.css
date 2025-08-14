@@ -1183,7 +1183,17 @@ section {
 .tech-tag.tf { background: rgba(255, 117, 20, 0.1); color: #ff7514; border-color: rgba(255, 117, 20, 0.3); }
 .tech-tag.fastapi { background: rgba(16, 185, 129, 0.1); color: #10b981; border-color: rgba(16, 185, 129, 0.3); }
 .tech-tag.openai { background: rgba(116, 75, 162, 0.1); color: #744ca2; border-color: rgba(116, 75, 162, 0.3); }
-
+.tech-tag.html{
+    background: rgba(75, 85, 99, 0.1); color: var(--gray-700); border-color: rgba(75, 85, 99, 0.3);
+}
+.tech-tag.css{
+    background: rgba(208, 58, 201, 0.1); color: violet;
+       border-color: rgba(32, 35, 40, 0.3);
+}
+.tech-tag.JavaScript{
+    background: rgba(97, 147, 216, 0.1); color: blue;
+     border-color: rgba(75, 85, 99, 0.3);
+}
 /* Enhanced Skills Section */
 .skills {
     background: var(--white);
